@@ -2,6 +2,7 @@ import React from "react";
 import { Container } from "reactstrap";
 import Header from "./components/nHeader";
 import CardReactForm from "./components/cardReactForm";
+import CardButton from "./components/cardButton";
 
 function App() {
   return (
@@ -20,13 +21,13 @@ function App() {
           <CardReactForm />
         </div>
         <div className="col">
-          <CardReactForm />
+          <CardButton />
         </div>
         <div className="col">
-          <CardReactForm />>
+          <CardButton />
         </div>
         <div className="col">
-          <CardReactForm />>
+          <CardButton />
         </div>
       </div>
     </div>

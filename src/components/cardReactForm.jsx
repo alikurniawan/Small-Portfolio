@@ -1,18 +1,37 @@
 import React, { Component } from "react";
+import { Label, Input } from "reactstrap";
 
 class cardReacrForm extends Component {
-  state = {};
+  constructor() {
+    super();
+
+    this.state = [{ userName: null }];
+  }
+
+  handleUsername = (event) =>
+    this.setState({
+      userName: event.target.value,
+    });
+
   render() {
     return (
       <div>
         <div class="card border-info" style={{ maxWidth: "20rem" }}>
-          <div class="card-header">Header</div>
+          <div class="card-header">Portfolio 1</div>
           <div class="card-body">
-            <h4 class="card-title">Info card title</h4>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
+            <h4 class="card-title">React Form</h4>
+            <div>
+              <Label>Username</Label>
+              <Input
+                type="text"
+                class="form-control"
+                name="username"
+                value={this.state.userName}
+                onChange={this.handleUsername}
+              />
+              <Label>Answer :</Label>
+              <Input value={this.state.userName} />
+            </div>
           </div>
         </div>
       </div>
