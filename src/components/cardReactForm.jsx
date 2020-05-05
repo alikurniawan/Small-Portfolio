@@ -6,6 +6,8 @@ class cardReacrForm extends Component {
     super();
 
     this.state = [{ userName: null }];
+
+    this.handleUsername = this.handleUsername.bind(this);
   }
 
   handleUsername = (event) =>
@@ -29,7 +31,7 @@ class cardReacrForm extends Component {
                 value={this.state.userName}
                 onChange={this.handleUsername}
               />
-              <Label>Answer :</Label>
+              <Label className="mt-3">Answer :</Label>
               <Input value={this.state.userName} />
             </div>
           </div>
