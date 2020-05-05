@@ -15,7 +15,7 @@ const nHeader = () => (
             />
           </Col>
           <Col>
-            <p style={{marginLeft: '13px', marginTop: '-19px'}}><h2>Small Portfolio</h2></p>
+            <p style={{marginLeft: '13px', marginTop: '-19px'}}><h2> My Small Portfolio</h2></p>
           </Col>
         </Row>
       </Jumbotron>
